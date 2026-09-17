@@ -22,7 +22,7 @@ Cette page s'appuie sur les données disponibles et vérifiées dans notre base 
 
 | Élément | Détail |
 | --- | --- |
-| Prix observé | 44,98 $ (prix observé au 2026-09-17) |
+| Prix observé | Information à vérifier |
 | Note | Information à vérifier |
 | Catégorie | audio / ecouteurs-sans-fil |
 | Marque | JBL |

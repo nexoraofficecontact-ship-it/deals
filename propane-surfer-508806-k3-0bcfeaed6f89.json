@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "propane-surfer-508806-k3",
+  "private_key_id": "0bcfeaed6f89c2b9f38c0f50160651ccecd00190",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC5JCQ1AUDO1WRS\n0pQoAX2NjPfegEsCZhgvWJ9pSvfEvfSbkjrJSLFV6ZHaK50bCeKOalEIcZfN2+Vn\nwxaHNndLDmk31wkYe07m2ZpmzveIWIlto0exZPlNARL0SXaHi3gW1KG6ga7JBsEb\nEP6QOmDTfoduDx97Cn+uAaF6W6fdXT6mcchXdAFluGOu0jHEJaliJKKBfuFM1A+A\navyY4DiuA/73JAdUDDW0ANltxMjfnIcHZynQSeRE2G+lpq8RIvbwVFrxOb7ffYgk\nVN3qrm3xCmGMyVZULKtvMWYWbbYhIqU9XxImytvUfsTYz9wfb21fL+EnttmNi1YE\nnkoFwa4/AgMBAAECggEAA0+WJiyDkC9Yv/JsG9sK98ERnbUFomFZBV+8WhGxJJ+R\nBEc1LexS34pxxUkKYjVnC8zy7ge6A0Bvdc+TU4+xynHTh+AclYd+/bnefQAuhQ2w\nR3moCpAXtTzTrfKyX/Iqj5311nQDQC0Svv0q0EF7Ac09dsZmdbjWV7JHxPxmoBrG\n+tGH20seeOcD90AeLEsuB9Q0NLyBEyJ3iYwaS3wqdwcTzbtu/jqAjSU2CMNQxVg3\nDKXHBL3BdJ0OzTu/HJKUV9zK/YqGnJfAOgPg329hCVNhBEJRJmvRi2nxBpZdnEj8\n8QRFyyvzCa/XfmD3HrwGB3GekdZy9MPpw+4szva/IQKBgQDnqZXBYO5+8q+KvZXW\nsi8mgRzRruHYS68Kqcodwi+oWtvPKTj+gzyAfblcnHbrrRJ1pYjpEW0efM6A4xUD\nYmIsnHEf/WvE/zJqIN1H4R5D0QdWYQGuLmEfiqcS/iGUPff7G6FFVe1MM7NfTXQY\ntJjDZiqklEvj9c2ptpsvBsVxAwKBgQDMl2V9m+DdT8LCmrgc8jaoql8uGvogrH5t\nroQSemld00HHp6QazP1oZtKWmRdbvh6DprYifSoNyF0QVavOj82yNC9+l7uYNkaR\n1SMUAMVbxe2QDjgPFdtH6QVsUTjeCCtFN1G3981Z+Uj0WXTGGqSx89rbtiTjao3w\nfTS/AbQjFQKBgQDXdXFT9qw6o8pCVot6sCSMQj8kgeuJOPLnDv1tagLbKQ4RAX0B\nsdteghAZI2izTzfA9aF9a3i6h0ektg8AI8u9RA8uuos2IEeqT0CfLq/wUQPrAbQH\nZRlttY4oavWeI3h1MsBudTmLyvYEKExXAfimm2oDwe1HaoDKXIy+UyTlMwKBgF0D\nW4XOr12OXIoi0x990vG9e0Y3x43BPj1ZQPwxoOOiHt7JTWdN2Mt1K7qB4Ue5WKAb\n0+Q8KTlY5U5+1Hw1jpu88/bGvufFjTHRx3/ZleBSTN3YSQ46rpWzz95d0s/GwP1X\n2BQeWcLU/aDxZpCGHmg06ERJO94UXHGAStGn0aC9AoGBANrRCLV7yvZEi89EEdpU\nYx4Mf0K2I+XFRGMRbpFTmjfJA6lhrShaGv9ZJYypXE3Mp3gkLaFht6May2qbyFw2\n6qm8VdNISSI6vux/iBQRPvE25nCnmroJ13jahEC7Gk8i5HiZ/wFRbElp73B3yzfr\nsdhua0g00xWIWMHHbB2Lp45U\n-----END PRIVATE KEY-----\n",
+  "client_email": "nexora@propane-surfer-508806-k3.iam.gserviceaccount.com",
+  "client_id": "113791751216675707755",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/nexora%40propane-surfer-508806-k3.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
