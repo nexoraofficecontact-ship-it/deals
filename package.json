@@ -1,0 +1,26 @@
+{
+  "name": "amazon-affiliate-ca",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Site media + comparateur + guides d'achat affilie Amazon.ca. Google Sheet = source de verite, pipeline de validation et de publication controlee, site Next.js.",
+  "workspaces": [
+    "scripts",
+    "web"
+  ],
+  "scripts": {
+    "db:init": "npm run db:init -w scripts",
+    "sheet:create": "npm run sheet:create -w scripts",
+    "sync": "npm run sync -w scripts",
+    "verify": "npm run verify -w scripts",
+    "generate": "npm run generate -w scripts",
+    "publish": "npm run publish -w scripts",
+    "status": "npm run status -w scripts",
+    "export:site": "npm run export -w scripts",
+    "test": "npm run test -w scripts",
+    "dev:web": "npm run dev -w web",
+    "build:web": "npm run build -w web"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  }
+}

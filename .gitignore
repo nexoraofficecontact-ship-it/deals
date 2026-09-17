@@ -1,0 +1,31 @@
+# Dependances
+node_modules/
+
+# Bases de donnees locales (sources editoriales)
+db/*.db
+db/*.db-journal
+db/*.sqlite
+
+# Environnement et secrets — NE JAMAIS COMMITER
+.env
+.env.local
+.env.*.local
+credentials/
+*.service-account.json
+*.pem
+*secret*.json
+
+# Sorties de build
+web/.next/
+web/out/
+web/.vercel
+dist/
+build/
+
+# Journaux et systeme
+*.log
+.DS_Store
+Thumbs.db
+
+# Copie locale de surveillance
+.papertrail/

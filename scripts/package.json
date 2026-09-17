@@ -1,0 +1,30 @@
+{
+  "name": "scripts",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Pipeline editorial : Google Sheet -> validation -> contenu -> qualite -> publication. Zero dependance npm (node:sqlite, node:crypto, fetch).",
+  "bin": {
+    "db:init": "bin/init-db.mjs",
+    "sheet:create": "bin/sheet-create.mjs",
+    "sync": "bin/sync.mjs",
+    "verify": "bin/verify.mjs",
+    "generate": "bin/generate.mjs",
+    "publish": "bin/publish.mjs",
+    "status": "bin/status.mjs"
+  },
+  "scripts": {
+    "db:init": "node bin/init-db.mjs",
+    "sheet:create": "node bin/sheet-create.mjs",
+    "sync": "node bin/sync.mjs",
+    "verify": "node bin/verify.mjs",
+    "generate": "node bin/generate.mjs",
+    "publish": "node bin/publish.mjs",
+    "status": "node bin/status.mjs",
+    "export": "node bin/export-site.mjs",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  }
+}
