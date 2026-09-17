@@ -95,11 +95,27 @@ web/                   Site Next.js (App Router, SSG)
 ## Déploiement (Vercel)
 
 1. Régénérer les données : `npm run export:site` (commit de `web/data/site-data.json`).
-2. Sur Vercel : **Root Directory** = `web`, build `npm run build`, install `npm install`.
-3. Définir `SITE_URL` et `SITE_NAME` dans les variables d'environnement Vercel.
+2. Pousser le code sur GitHub (`git push`).
+3. Sur Vercel : **Root Directory** = `web`, build `npm run build`, install `npm install`.
+4. Définir `SITE_URL` et `SITE_NAME` dans les variables d'environnement Vercel.
 
-## État actuel
+## Connexion Google Sheet (service account)
 
-- Pipeline, tests (25/25) et build du site vérifiés localement avec des fixtures isolées.
-- En attente : identifiants Google, dépôt GitHub, compte Vercel, et les 10 produits réels à saisir
-  dans le Sheet.
+Le pipeline écrit dans le Sheet via un service account. Pour le configurer :
+
+1. Google Cloud Console → créer/ouvrir un projet.
+2. Activer l'API **Google Sheets** et **Google Drive**.
+3. **IAM & Admin → Comptes de service → Créer un compte de service** → télécharger la clé JSON.
+4. Ouvrir le Sheet → **Partager** → ajouter l'**adresse email** du compte de service comme **Éditeur**.
+5. Dans `.env` : `GOOGLE_SERVICE_ACCOUNT_JSON=<chemin_ou_JSON>` + `GOOGLE_SHEET_ID=<ID>`.
+
+Le Sheet doit contenir un onglet `Products` avec les 41 colonnes du schéma (`scripts/lib/sheet-schema.mjs`). `npm run sheet:create` le crée.
+
+## Statut actuel
+
+- ✅ Pipeline, tests (25/25), build du site (34 pages) vérifiés avec les 10 produits.
+- ✅ Lien affilié : accepte `amzn.to/...` et `amazon.ca/-/fr/...`.
+- ⏳ **Google Sheet** : vide ; le service account n'est pas encore configuré (le site actuel tourne sur l'export local).
+- ⏳ **GitHub / Vercel** : CLI présentes (`gh` 2.8.9, `vercel` 59.20.0) mais **pas authentifiées** (`vercel whoami` → `login_required`). Fournissez :
+  - L'**URL du dépôt GitHub** + un **Personal Access Token** (ou poussez manuellement).
+  - Connectez le dépôt dans le tableau de bord Vercel (pas besoin de CLI).
