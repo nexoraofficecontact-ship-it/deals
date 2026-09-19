@@ -29,3 +29,5 @@ Thumbs.db
 
 # Copie locale de surveillance
 .papertrail/
+# Service account JSON (secret)
+propane-surfer-*-*.json
