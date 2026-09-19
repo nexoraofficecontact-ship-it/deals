@@ -10,9 +10,17 @@ export default function NotFound() {
       <div className="empty-state">
         <h1>Page introuvable</h1>
         <p className="muted">La page demandée n’existe pas ou a été déplacée.</p>
-        <Link className="btn btn-secondary" href="/">
-          Retour à l’accueil
-        </Link>
+        <p style={{ display: 'flex', gap: 10, justifyContent: 'center', flexWrap: 'wrap' }}>
+          <Link className="btn btn-primary" href="/">
+            Retour à l’accueil
+          </Link>
+          <Link className="btn btn-secondary" href="/categories/">
+            Explorer les catégories
+          </Link>
+          <Link className="btn btn-secondary" href="/comparatifs/">
+            Voir les comparatifs
+          </Link>
+        </p>
       </div>
     </div>
   );

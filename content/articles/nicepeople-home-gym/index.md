@@ -8,7 +8,7 @@ keyword: "machine musculation maison"
 qualityScore: 94
 schema: Product
 entities: ["nicepeople-home-gym"]
-publishedAt: "2026-09-17"
+publishedAt: "2026-09-19"
 ---
 # NICEPEOPLE Home Gym
 
@@ -86,4 +86,4 @@ En l'état des informations vérifiées, NICEPEOPLE Home Gym se positionne comme
 - [Sunny Health & Fitness Mini Stepper](/sunny-mini-stepper/)
 - [Taevno Vibration Plate](/taevno-vibration-plate/)
 - [CFX Resistance Bands](/cfx-resistance-bands/)
-- [Demo Mini Stepper Compact](/demo-stepper-mini/)
+- [FOUSAE 5-in-1 Treadmill](/fousae-5in1-treadmill/)

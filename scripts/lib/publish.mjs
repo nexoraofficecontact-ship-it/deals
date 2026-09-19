@@ -9,7 +9,7 @@ import { writeFileSync, mkdirSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { validateProduct, SEVERITY } from './validate.mjs';
 import { scoreProductPage, scoreComparison } from './quality.mjs';
-import { upsertContent, listContents, addInternalLink } from './db.mjs';
+import { upsertContent, listContents, listProducts, addInternalLink } from './db.mjs';
 import { generateSitemap } from './sitemap.mjs';
 import { getConfig } from './config.mjs';
 import { todayIso, countWords } from './util.mjs';
@@ -63,7 +63,13 @@ export function publishProductPage(product, opts = { force: false }) {
   }
 
   // 3) génération du contenu, maillage interne puis SEO CHECK
-  const content = generateProductPage(product);
+  const allProducts = listProducts();
+  const byId = new Map(allProducts.map((p) => [p.product_id, p]));
+  const nameResolver = (slug) => {
+    const target = byId.get(slug);
+    return target ? { slug: target.product_id, name: target.product_name } : null;
+  };
+  const content = generateProductPage(product, nameResolver);
   const links = suggestInternalLinks(content.body_md, null)
     .filter((l) => l.targetSlug !== `/${product.product_id}/`);
   content.body_md = attachInternalLinks(content.body_md, links, content.slug);

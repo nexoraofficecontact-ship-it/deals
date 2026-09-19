@@ -11,9 +11,18 @@ function sanitize(html) {
     .replace(/\son\w+\s*=\s*("[^"]*"|'[^']*'|[^\s>]+)/gi, '');
 }
 
+// Les liens Amazon (affiliés) rendus dans le contenu sont marqués
+// target="_blank" + rel="nofollow sponsored noopener", comme les CTA.
+function markAmazonLinks(html) {
+  return html.replace(
+    /<a href="(https:\/\/(?:www\.)?amazon\.ca\/[^"]*|https:\/\/amzn\.to\/[^"]*)">/g,
+    (m, href) => `<a href="${href}" target="_blank" rel="nofollow sponsored noopener">`
+  );
+}
+
 export function renderMarkdown(md) {
   const html = marked.parse(String(md || ''));
-  return sanitize(html);
+  return markAmazonLinks(sanitize(html));
 }
 
 export function stripMarkdown(md) {

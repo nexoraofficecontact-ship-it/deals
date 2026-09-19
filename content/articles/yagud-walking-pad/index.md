@@ -8,7 +8,7 @@ keyword: "tapis de marche 3 en 1"
 qualityScore: 96
 schema: Product
 entities: ["yagud-walking-pad"]
-publishedAt: "2026-09-17"
+publishedAt: "2026-09-19"
 ---
 # Yagud Walking Pad 3-in-1
 
@@ -22,7 +22,7 @@ Cette page s'appuie sur les données disponibles et vérifiées dans notre base 
 
 | Élément | Détail |
 | --- | --- |
-| Prix observé | Information à vérifier |
+| Prix observé | 179,99 $ (prix observé au 2026-09-17) |
 | Note | Information à vérifier |
 | Catégorie | fitness / tapis-de-marche |
 | Marque | Yagud |
@@ -65,7 +65,8 @@ Yagud Walking Pad 3-in-1 est un tapis de marche 3-en-1 avec poignee de la marque
 
 ## Comparaison avec des alternatives
 
-- fousae-5in1-treadmill,hevglrm-walking-pad
+- [FOUSAE 5-in-1 Treadmill](/fousae-5in1-treadmill/)
+- [HevGlrm Walking Pad](/hevglrm-walking-pad/)
 
 ## Questions fréquentes
 
@@ -85,7 +86,7 @@ En l'état des informations vérifiées, Yagud Walking Pad 3-in-1 se positionne 
 
 ## En savoir plus
 
-- [Demo Walking Pad Incline Pro](/demo-walking-pad-incline/)
-- [Demo Walking Pad XPro 2026](/demo-walking-pad-xpro/)
 - [FOUSAE 5-in-1 Treadmill](/fousae-5in1-treadmill/)
 - [HevGlrm Walking Pad](/hevglrm-walking-pad/)
+- [MOSUNY 5-in-1 Exercise Bike](/mosuny-exercise-bike/)
+- [Sunny Health & Fitness Mini Stepper](/sunny-mini-stepper/)

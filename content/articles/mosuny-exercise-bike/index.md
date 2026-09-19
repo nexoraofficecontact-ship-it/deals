@@ -8,7 +8,7 @@ keyword: "vélo stationnaire"
 qualityScore: 96
 schema: Product
 entities: ["mosuny-exercise-bike"]
-publishedAt: "2026-09-17"
+publishedAt: "2026-09-19"
 ---
 # MOSUNY 5-in-1 Exercise Bike
 
@@ -22,7 +22,7 @@ Cette page s'appuie sur les données disponibles et vérifiées dans notre base 
 
 | Élément | Détail |
 | --- | --- |
-| Prix observé | Information à vérifier |
+| Prix observé | 199,98 $ (prix observé au 2026-09-17) |
 | Note | Information à vérifier |
 | Catégorie | fitness / velo-stationnaire |
 | Marque | MOSUNY |

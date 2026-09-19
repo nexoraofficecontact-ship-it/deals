@@ -53,7 +53,10 @@ for (const product of products) {
     report.push(`[skip] ${product.product_id} : validation bloquée`);
     continue;
   }
-  const content = generateProductPage(product);
+  const content = generateProductPage(product, (slug) => {
+    const target = products.find((p) => p.product_id === slug);
+    return target ? { slug: target.product_id, name: target.product_name } : null;
+  });
   const score = scoreProductPage({ product, content, validation });
 
   const suggested = suggestInternalLinks(content.body_md, content.slug);

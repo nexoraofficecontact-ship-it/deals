@@ -8,7 +8,7 @@ keyword: "plaque vibrante"
 qualityScore: 96
 schema: Product
 entities: ["taevno-vibration-plate"]
-publishedAt: "2026-09-17"
+publishedAt: "2026-09-19"
 ---
 # Taevno Vibration Plate
 
@@ -22,7 +22,7 @@ Cette page s'appuie sur les données disponibles et vérifiées dans notre base 
 
 | Élément | Détail |
 | --- | --- |
-| Prix observé | Information à vérifier |
+| Prix observé | 159,98 $ (prix observé au 2026-09-17) |
 | Note | Information à vérifier |
 | Catégorie | fitness / plaque-vibrante |
 | Marque | Taevno |
@@ -88,4 +88,4 @@ En l'état des informations vérifiées, Taevno Vibration Plate se positionne co
 - [Sunny Health & Fitness Mini Stepper](/sunny-mini-stepper/)
 - [NICEPEOPLE Home Gym](/nicepeople-home-gym/)
 - [CFX Resistance Bands](/cfx-resistance-bands/)
-- [Demo Mini Stepper Compact](/demo-stepper-mini/)
+- [FOUSAE 5-in-1 Treadmill](/fousae-5in1-treadmill/)

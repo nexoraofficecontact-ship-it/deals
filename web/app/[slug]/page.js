@@ -57,7 +57,8 @@ export default async function SlugPage({ params }) {
     const related = productsByCategory(product.category)
       .filter((p) => p.product_id !== product.product_id)
       .slice(0, 5);
-    return <ProductView product={product} content={content} related={related} />;
+    const comparisons = comparisonsForProducts(related);
+    return <ProductView product={product} content={content} related={related} comparisons={comparisons} />;
   }
 
   const category = getCategory(slug);

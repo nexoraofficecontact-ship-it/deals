@@ -41,33 +41,44 @@ export function productSchema({ product, content, url }) {
     '@context': 'https://schema.org',
     '@type': 'Product',
     name: product.product_name,
-    brand: { '@type': 'Brand', name: product.brand },
     description: content?.excerpt || product.positioning || undefined,
     category: product.category,
     url: `${getSite().url}${url}`
   };
+  if (product.brand) {
+    schema.brand = { '@type': 'Brand', name: product.brand };
+  }
   if (product.rating !== null && product.rating !== undefined) {
-    schema.aggregateRating = {
+    const aggregateRating = {
       '@type': 'AggregateRating',
       ratingValue: String(product.rating),
-      reviewCount: product.review_count ? String(product.review_count) : undefined,
       bestRating: '5',
       worstRating: '1'
     };
+    if (product.review_count !== null && product.review_count !== undefined) {
+      aggregateRating.reviewCount = String(product.review_count);
+    }
+    schema.aggregateRating = aggregateRating;
   }
   if (product.asin) {
-    schema.gtin = undefined;
     schema.sku = product.asin;
+  }
+  if (product.image_url) {
+    schema.image = product.image_url;
   }
   const offerUrl = product.affiliate_url || product.amazon_url;
   if (offerUrl) {
-    schema.offers = {
+    const offers = {
       '@type': 'Offer',
       url: offerUrl,
-      priceCurrency: product.currency || 'CAD',
-      price: product.price_cad !== null && product.price_cad !== undefined ? String(product.price_cad) : undefined,
-      availability: 'https://schema.org/InStock'
+      priceCurrency: product.currency || 'CAD'
     };
+    // Le prix n'est inclus que s'il a réellement été observé. Aucune
+    // disponibilité n'est déclarée : elle n'est pas connue avec certitude.
+    if (product.price_cad !== null && product.price_cad !== undefined) {
+      offers.price = String(product.price_cad);
+    }
+    schema.offers = offers;
   }
   return schema;
 }

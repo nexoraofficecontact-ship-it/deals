@@ -40,14 +40,28 @@ export default function SiteFooter() {
             <li>
               <Link href="/faq/">Questions fréquentes</Link>
             </li>
+            <li>
+              <Link href="/contact/">Contact</Link>
+            </li>
+            <li>
+              <Link href="/politique-de-confidentialite/">Politique de confidentialité</Link>
+            </li>
+            <li>
+              <Link href="/conditions-utilisation/">Conditions d&apos;utilisation</Link>
+            </li>
           </ul>
+        </div>
+        <div className="footer-disclosure">
+          <strong>Divulgation d&apos;affiliation :</strong> {site.name} participe au Programme Partenaires
+          d&apos;Amazon.ca. Certains liens de ce site sont des liens affiliés : si vous cliquez puis achetez,
+          nous pouvons percevoir une commission, sans coût additionnel pour vous. Cela ne change jamais nos
+          évaluations.
         </div>
       </div>
       <div className="container footer-bottom">
         <p className="muted small">
-          © {year} {site.name}. En tant que participant au Programme Partenaires d&apos;Amazon, nous réalisons
-          des commissions sur les achats éligibles. Les prix affichés sont ceux observés lors de la dernière
-          vérification et peuvent changer.
+          © {year} {site.name}. Les prix affichés sont ceux observés lors de la dernière vérification et
+          peuvent changer à tout moment.
         </p>
       </div>
     </footer>

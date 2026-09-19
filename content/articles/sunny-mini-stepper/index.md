@@ -8,7 +8,7 @@ keyword: "mini stepper"
 qualityScore: 96
 schema: Product
 entities: ["sunny-mini-stepper"]
-publishedAt: "2026-09-17"
+publishedAt: "2026-09-19"
 ---
 # Sunny Health & Fitness Mini Stepper
 
@@ -22,7 +22,7 @@ Cette page s'appuie sur les données disponibles et vérifiées dans notre base 
 
 | Élément | Détail |
 | --- | --- |
-| Prix observé | Information à vérifier |
+| Prix observé | 61,67 $ (prix observé au 2026-09-17) |
 | Note | Information à vérifier |
 | Catégorie | fitness / mini-stepper |
 | Marque | Sunny Health & Fitness |
@@ -85,7 +85,7 @@ En l'état des informations vérifiées, Sunny Health & Fitness Mini Stepper se 
 
 ## En savoir plus
 
-- [Demo Mini Stepper Compact](/demo-stepper-mini/)
 - [CFX Resistance Bands](/cfx-resistance-bands/)
-- [Demo Walking Pad XPro 2026](/demo-walking-pad-xpro/)
 - [HevGlrm Walking Pad](/hevglrm-walking-pad/)
+- [Yagud Walking Pad 3-in-1](/yagud-walking-pad/)
+- [FOUSAE 5-in-1 Treadmill](/fousae-5in1-treadmill/)

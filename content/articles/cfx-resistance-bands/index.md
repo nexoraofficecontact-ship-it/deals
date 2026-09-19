@@ -8,7 +8,7 @@ keyword: "bandes de resistance"
 qualityScore: 94
 schema: Product
 entities: ["cfx-resistance-bands"]
-publishedAt: "2026-09-17"
+publishedAt: "2026-09-19"
 ---
 # CFX Resistance Bands
 
@@ -86,5 +86,5 @@ En l'état des informations vérifiées, CFX Resistance Bands se positionne comm
 
 - [Sunny Health & Fitness Mini Stepper](/sunny-mini-stepper/)
 - [NICEPEOPLE Home Gym](/nicepeople-home-gym/)
-- [Demo Mini Stepper Compact](/demo-stepper-mini/)
-- [Demo Walking Pad Incline Pro](/demo-walking-pad-incline/)
+- [FOUSAE 5-in-1 Treadmill](/fousae-5in1-treadmill/)
+- [HevGlrm Walking Pad](/hevglrm-walking-pad/)

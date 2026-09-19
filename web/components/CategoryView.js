@@ -1,9 +1,11 @@
 import Link from 'next/link';
 import ProductTable from './ProductTable.js';
 import ProductCard from './ProductCard.js';
+import ProductVisual from './ProductVisual.js';
 import Breadcrumbs from './Breadcrumbs.js';
 import JsonLd from './JsonLd.js';
 import EmptyState from './EmptyState.js';
+import { categoryMeta } from '../lib/data.js';
 import { breadcrumbSchema, itemListSchema } from '../lib/schema.js';
 
 export default function CategoryView({ category, products, comparisons = [] }) {
@@ -12,15 +14,31 @@ export default function CategoryView({ category, products, comparisons = [] }) {
     { name: 'Catégories', href: '/categories/' },
     { name: category.name, href: `/${category.slug}/` }
   ];
+  const meta = categoryMeta(category.slug);
+  const description =
+    category.description || meta?.description ||
+    `Produits vérifiés, comparatifs et repères d’achat pour la catégorie ${category.name.toLowerCase()}.`;
 
   return (
     <div className="container">
       <Breadcrumbs items={crumbs} />
-      <h1>{category.name}</h1>
-      <p className="muted">
-        Produits vérifiés, comparatifs et repères d’achat pour la catégorie {category.name.toLowerCase()}. Les
-        prix indiqués sont ceux observés lors de la dernière vérification.
-      </p>
+      <div className="hero-home category-hero">
+        <ProductVisual category={category.slug} />
+        <h1>{category.name}</h1>
+        {meta?.tagline ? <p className="lead">{meta.tagline}</p> : null}
+        <div className="hero-actions">
+          {products.length ? (
+            <a className="btn btn-primary" href="#comparer">
+              Comparer {products.length} produits
+            </a>
+          ) : null}
+          <Link className="btn btn-secondary" href="/categories/">
+            Toutes les catégories
+          </Link>
+        </div>
+      </div>
+
+      <p className="muted">{description}</p>
 
       {category.subcategories.length ? (
         <section>
@@ -36,8 +54,10 @@ export default function CategoryView({ category, products, comparisons = [] }) {
       ) : null}
 
       {products.length ? (
-        <section>
-          <h2>Comparer les produits</h2>
+        <section id="comparer">
+          <div className="section-head">
+            <h2>Comparer les produits</h2>
+          </div>
           <ProductTable products={products} />
           <div className="grid">
             {products.map((p) => (

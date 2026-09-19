@@ -8,7 +8,7 @@ keyword: "tapis de course pliable"
 qualityScore: 96
 schema: Product
 entities: ["fousae-5in1-treadmill"]
-publishedAt: "2026-09-17"
+publishedAt: "2026-09-19"
 ---
 # FOUSAE 5-in-1 Treadmill
 
@@ -22,7 +22,7 @@ Cette page s'appuie sur les données disponibles et vérifiées dans notre base 
 
 | Élément | Détail |
 | --- | --- |
-| Prix observé | Information à vérifier |
+| Prix observé | 279,98 $ (prix observé au 2026-09-17) |
 | Note | Information à vérifier |
 | Catégorie | fitness / tapis-de-marche |
 | Marque | FOUSAE |
@@ -64,7 +64,8 @@ FOUSAE 5-in-1 Treadmill est un tapis de course pliable 5-en-1 de la marque FOUSA
 
 ## Comparaison avec des alternatives
 
-- hevglrm-walking-pad,yagud-walking-pad
+- [HevGlrm Walking Pad](/hevglrm-walking-pad/)
+- [Yagud Walking Pad 3-in-1](/yagud-walking-pad/)
 
 ## Questions fréquentes
 
@@ -89,6 +90,6 @@ En l'état des informations vérifiées, FOUSAE 5-in-1 Treadmill se positionne c
 ## En savoir plus
 
 - [Yagud Walking Pad 3-in-1](/yagud-walking-pad/)
-- [Demo Walking Pad XPro 2026](/demo-walking-pad-xpro/)
 - [HevGlrm Walking Pad](/hevglrm-walking-pad/)
-- [Demo Walking Pad Incline Pro](/demo-walking-pad-incline/)
+- [MOSUNY 5-in-1 Exercise Bike](/mosuny-exercise-bike/)
+- [Sunny Health & Fitness Mini Stepper](/sunny-mini-stepper/)

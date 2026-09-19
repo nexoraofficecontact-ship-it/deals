@@ -5,10 +5,10 @@ metaTitle: "JBL Vibe Beam : écouteurs sans fil véritables (audio)"
 metaDescription: "Écouteurs true wireless à prix accessible."
 kind: product
 keyword: "écouteurs sans fil"
-qualityScore: 89
+qualityScore: 86
 schema: Product
 entities: ["jbl-vibe-beam"]
-publishedAt: "2026-09-17"
+publishedAt: "2026-09-19"
 ---
 # JBL Vibe Beam
 
@@ -22,7 +22,7 @@ Cette page s'appuie sur les données disponibles et vérifiées dans notre base 
 
 | Élément | Détail |
 | --- | --- |
-| Prix observé | Information à vérifier |
+| Prix observé | 44,98 $ (prix observé au 2026-09-17) |
 | Note | Information à vérifier |
 | Catégorie | audio / ecouteurs-sans-fil |
 | Marque | JBL |
@@ -82,7 +82,3 @@ Réponse en cours de validation : la question porte sur un point non confirmé. 
 En l'état des informations vérifiées, JBL Vibe Beam se positionne comme un choix écouteurs sans fil véritables jugé pertinent pour Usage quotidien. Nous relevons 2 point(s) favorable(s). Ses limites signalées : Réduction de bruit basique. 
 
 ⚠️ Aucun achat n'est exigé : notre rôle est de vous donner des repères clairs avant de prendre une décision. Le prix indiqué est celui observé lors de la dernière vérification et peut varier.
-
-## En savoir plus
-
-- [Demo Écouteurs Sans Fil ANC](/demo-ecouteurs-sans-fil/)

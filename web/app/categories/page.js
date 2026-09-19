@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { allCategories } from '../../lib/data.js';
+import { allCategories, categoryMeta } from '../../lib/data.js';
 import Breadcrumbs from '../../components/Breadcrumbs.js';
 import EmptyState from '../../components/EmptyState.js';
 import JsonLd from '../../components/JsonLd.js';
@@ -26,15 +26,19 @@ export default function CategoriesPage() {
       </p>
       {categories.length ? (
         <div className="grid">
-          {categories.map((c) => (
-            <Link key={c.slug} className="tile" href={`/${c.slug}/`}>
-              <h3>{c.name}</h3>
-              <p className="muted small">
-                {c.productCount} produit{c.productCount > 1 ? 's' : ''} · {c.subcategories.length} sous-catégorie
-                {c.subcategories.length > 1 ? 's' : ''}
-              </p>
-            </Link>
-          ))}
+          {categories.map((c) => {
+            const meta = categoryMeta(c.slug);
+            return (
+              <Link key={c.slug} className="tile" href={`/${c.slug}/`}>
+                <h3 className="tile-title">{c.name}</h3>
+                {meta?.tagline ? <p className="tile-tagline">{meta.tagline}</p> : null}
+                <p className="tile-meta">
+                  {c.productCount} produit{c.productCount > 1 ? 's' : ''} · {c.subcategories.length}{' '}
+                  sous-catégorie{c.subcategories.length > 1 ? 's' : ''}
+                </p>
+              </Link>
+            );
+          })}
         </div>
       ) : (
         <EmptyState title="Aucune catégorie publiée">

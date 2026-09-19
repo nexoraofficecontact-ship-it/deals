@@ -15,13 +15,23 @@ export const metadata = {
   },
   description:
     'Guides d’achat, comparatifs et analyses de produits au Canada. Des informations vérifiées, des comparaisons structurées et une divulgation d’affiliation claire.',
+  icons: {
+    icon: '/icon.svg'
+  },
   robots: { index: true, follow: true },
   openGraph: {
     type: 'website',
     locale: 'fr_CA',
-    siteName: site.name
+    siteName: site.name,
+    url: site.url
   },
   alternates: { canonical: '/' }
+};
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  themeColor: '#0f5c4f'
 };
 
 export default function RootLayout({ children }) {

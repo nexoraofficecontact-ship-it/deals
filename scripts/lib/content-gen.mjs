@@ -81,7 +81,7 @@ export function buildProductBrief(product) {
 // ---------------------------------------------------------------------
 // PAGE PRODUIT (§9)
 // ---------------------------------------------------------------------
-export function generateProductPage(product) {
+export function generateProductPage(product, resolver = null) {
   const brief = buildProductBrief(product);
   const specs = specsOf(product);
   const features = parsePipe(product.key_features || '');
@@ -91,7 +91,10 @@ export function generateProductPage(product) {
   const notForArray = cons;
   const useCases = parsePipe(product.use_cases || '');
   const faqTopics = parsePipe(product.faq_topics || '');
-  const alternatives = parsePipe(product.competitor_products || '');
+  const alternatives = parsePipe(String(product.competitor_products || ''), '|,');
+  const alternativesResolved = alternatives
+    .map((slug) => resolver?.(slug))
+    .filter((r) => r !== null && r !== undefined);
 
   const intro = safe(() => {
     const name = product.product_name;
@@ -130,9 +133,11 @@ export function generateProductPage(product) {
     ? bullet(useCases)
     : `- Cas d'utilisation types pour ${product.product_type || 'ce type de produit'} — ${UNKNOWN}; consultez la fiche Amazon.ca.`;
 
-  const alternativesBody = alternatives.length
-    ? alternatives.map((a) => `- ${a}`).join('\n')
-    : `- ${UNKNOWN} — des alternatives comparables sont listées dans nos articles comparatifs quand elles sont vérifiées.`;
+  const alternativesBody = alternativesResolved.length
+    ? alternativesResolved.map(({ slug, name }) => `- [${name}](/${slug}/)`).join('\n')
+    : alternatives.length
+      ? `- ${UNKNOWN} — des alternatives comparables sont listées dans nos articles comparatifs quand elles sont vérifiées.`
+      : `- ${UNKNOWN} — des alternatives comparables sont listées dans nos articles comparatifs quand elles sont vérifiées.`;
 
   const faqBody = faqTopics.length
     ? faqTopics.map((q) => `### ${q}\n\n${answerFromData(q, specs, product)}`).join('\n\n')

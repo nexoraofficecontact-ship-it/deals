@@ -46,7 +46,7 @@ ${urls
 
   const target = outDir
     ? resolve(outDir, 'sitemap.xml')
-    : resolve(paths.webDir, 'public', 'sitemap.xml');
+    : resolve(paths.webDir, '.next-sitemap', 'sitemap.xml');
   mkdirSync(resolve(target, '..'), { recursive: true });
   writeFileSync(target, doc, 'utf8');
   return { target, count: urls.length };

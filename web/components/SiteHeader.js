@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { getSite } from '../lib/data.js';
+import MobileNav from './MobileNav.js';
 
 const NAV = [
   { href: '/categories/', label: 'Catégories' },
@@ -15,16 +16,14 @@ export default function SiteHeader() {
     <header className="site-header">
       <div className="container header-inner">
         <Link href="/" className="brand" aria-label={`Accueil — ${site.name}`}>
-          <span className="brand-mark" aria-hidden="true">◆</span>
+          <span className="brand-mark" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M4 12V6l4 3 4-3v6" />
+            </svg>
+          </span>
           <span>{site.name}</span>
         </Link>
-        <nav className="main-nav" aria-label="Navigation principale">
-          {NAV.map((item) => (
-            <Link key={item.href} href={item.href}>
-              {item.label}
-            </Link>
-          ))}
-        </nav>
+        <MobileNav items={NAV} cta={{ href: '/categories/', label: 'Voir les offres' }} />
       </div>
     </header>
   );

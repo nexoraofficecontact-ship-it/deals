@@ -10,10 +10,11 @@ export function slugify(input, fallback = 'page') {
 }
 
 /** Decoupe une valeur pipe-separee en tableau propre. */
-export function parsePipe(value) {
+export function parsePipe(value, separators = '|') {
   if (value == null) return [];
+  const escaped = String(separators).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   return String(value)
-    .split('|')
+    .split(new RegExp(`[${escaped}]`))
     .map((s) => s.trim())
     .filter(Boolean);
 }
